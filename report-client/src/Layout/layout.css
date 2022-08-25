@@ -1,0 +1,98 @@
+.home {
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 800px;
+  }
+  
+  .home__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 240px;
+    height: 600px;
+    position: sticky;
+    top: 76px;
+  }
+  
+  .home__about {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  .home__about span {
+    color: rgb(59, 73, 223);
+    cursor: pointer;
+  }
+  .home__about span:hover {
+    text-decoration: underline;
+  }
+  .home__about > p {
+    margin: 10px 0;
+    color: #777;
+  }
+
+
+  .home__usetable {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+  }
+  .home__right {
+    width: 325px;
+    height: 600px;
+    position: sticky;
+    top: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .home__right-ad {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  .home__right-ad > img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .home__right-ad > h2 {
+    color: rgb(59, 73, 223);
+  }
+  
+  .home__right-listngs {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  .home__right-listngs > h3 {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .home__listngsItem:not(:last-child) {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    color: #777;
+  }
+  .home__listngsItem:last-child {
+    padding: 20px;
+    color: #777;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home__left {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 968px) {
+    .home__right {
+      display: none;
+    }
+  }
+  

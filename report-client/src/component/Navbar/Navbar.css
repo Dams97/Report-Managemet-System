@@ -1,0 +1,122 @@
+.navbar {
+  height: 56px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+}
+
+.navbar_container {
+  max-width: 1280px;
+  padding: 0 1px;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: 25rem;
+}
+
+.navbar__left img {
+  height: 40px;
+}
+
+.navbar__input {
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+.navbar__input > input {
+  padding: 5px 10px;
+  height: 100%;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+.navbar__input > svg {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+/* margin-left: 20rem; */
+}
+
+
+
+
+/* .navbar__user {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+} */
+
+
+@media screen and (max-width: 768px) {
+  .navbar__input {
+    display: none;
+  }
+}
+.my-avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.createReport{
+  cursor: pointer;
+
+}
+
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: black;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

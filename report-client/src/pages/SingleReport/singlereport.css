@@ -1,0 +1,103 @@
+.singlePage__page404 {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .singlePage {
+    min-height: 600px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 10px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .singlePage__left {
+    flex: 2;
+    padding: 50px 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .singlePage__name {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .singlePage__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .singlePage__description {
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  .singlePage__tags {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .singlePage__tags > p {
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .singlePage__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+  }
+  .singlePage__right-user {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .singlePage__right-user p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  .singlePage__right-user span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+  }
+  .singlePage__right-user button {
+    background: rgb(59, 73, 223);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .singlePage__right-trending {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .singlePage__right {
+      display: none;
+    }
+  }
+  
